@@ -1,0 +1,140 @@
+.hot-offers-container {
+  background: url("https://tunatheme.com/tf/html/vicodin-preview/vicodin/img/bg/27.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: left;
+  padding: 50px 20px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.hot-offers-content {
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  margin-right: 100px;
+  transform: translateX(450px);
+   
+}
+
+.hot-offers-heading {
+    font-family: "Josefin Sans", sans-serif !important;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #087856;
+}
+
+.hot-offers-subheading {
+    font-family: "Josefin Sans", sans-serif !important;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+.discount-text{
+    color:#495057;
+    font-size: 18px !important;
+    margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+ 
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shop-now {
+  background: #ff9800;
+  color: white;
+}
+
+.shop-now:hover {
+  background: #e68900;
+}
+
+.deal-of-day {
+  background: #0a9a73;
+  color: white;
+}
+
+.deal-of-day:hover {
+  background: #087856;
+}
+
+.discount-text {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.countdown {
+  display: flex;
+
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.time-box {
+font-family: "Josefin Sans", sans-serif !important;
+  background: #fff;
+  color:#0a9a73;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.time-box span {
+  font-weight: bold;
+  font-size: 2rem;
+  display: block;
+}
+
+.time-box p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .hot-offers-content {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .countdown {
+    font-size: 1.2rem;
+  }
+
+  .time-box span {
+    font-size: 1.5rem;
+  }
+}

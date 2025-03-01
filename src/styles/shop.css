@@ -1,0 +1,44 @@
+/* shop products */
+.shop-container{
+  max-width: 1400px !important;
+}
+
+.pagination .MuiPaginationItem-root {
+  color: #0A9A73;
+}
+
+.pagination .Mui-selected {
+  background-color: #0A9A73 !important;
+  color: white !important;
+}
+
+.pagination .MuiPaginationItem-root:hover {
+  background-color: #febf8a !important;
+  color: white;
+}
+
+/* Cart.jsx */
+
+
+.card-content{
+  display: grid;
+  grid-template-columns: 40% 10% 20% 10% 5%;
+  gap: 30px;
+  width: 100%;
+  padding: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
