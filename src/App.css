@@ -62,6 +62,10 @@
   color:#0A9A73;
 }
 
+.css-1eger47-MuiBadge-root .MuiBadge-badge{
+  background-color: #fd7e14;
+}
+
 /* Home */
 .ourProducts-card{
 box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;

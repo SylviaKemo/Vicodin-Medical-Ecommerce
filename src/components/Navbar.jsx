@@ -9,6 +9,7 @@ import {
   ListItem,
   ListItemText,
   Box,
+  Badge,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -20,7 +21,6 @@ import { useCart } from "../context/CartContext";
 const Navbar = () => {
   const navigate = useNavigate();
   const { cart } = useCart();
-
 
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -36,7 +36,14 @@ const Navbar = () => {
   ];
 
   return (
-    <div style={{position: "sticky", top: 0, zIndex: 1000,backgroundColor:"#fff"}}>
+    <div
+      style={{
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
+        backgroundColor: "#fff",
+      }}
+    >
       <div className="container">
         <div className="navbar__1">
           <div>
@@ -51,17 +58,29 @@ const Navbar = () => {
             <SearchOutlinedIcon />
           </div>
           <div className="navbar__1_cart">
-            <IconButton color="inherit" onClick={() => navigate("/cart")}>
-              {/* <ShoppingCartIcon /> */}
-              <ShoppingCartOutlinedIcon />
-              {cart.length > 0 && (
-                <span style={{ marginLeft: 5 }}>{cart.length}</span>
-              )}
+            <IconButton
+              color="inherit"
+              onClick={() => navigate("/cart")}
+              sx={{ position: "relative", padding: "10px" }}
+            >
+              <Badge
+                badgeContent={cart.length}
+                color="secondary"
+                sx={{
+                  "& .MuiBadge-badge": {
+                    fontSize: "0.75rem",
+                    minWidth: "18px",
+                    height: "18px",
+                  },
+                }}
+              >
+                <ShoppingCartOutlinedIcon fontSize="medium" />
+              </Badge>
             </IconButton>
-          <div>
-            <span>YOUR CART</span>
-            <span>Ksh 488</span>
-          </div>
+            <div>
+              <span>YOUR CART</span>
+              <span>Ksh 488</span>
+            </div>
           </div>
         </div>
       </div>
@@ -76,7 +95,6 @@ const Navbar = () => {
                   style={{
                     color: "#fff",
                     textDecoration: "none",
-                    
                   }}
                 >
                   {label}
